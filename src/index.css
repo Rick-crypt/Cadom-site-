@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cadom-primary: #0d1b2a;
+  --color-cadom-primary-light: #1a3a2a;
+  --color-cadom-accent: #c9a84c;
+  --color-cadom-accent-hover: #e8c97a;
+  --color-cadom-green: #2d5a27;
+  --color-cadom-green-hover: #4a8c3f;
+  --color-cadom-bg: #f8f4ed;
+  --color-cadom-bg-alt: #f1ede4;
+  --radius-lg: 1.5rem;
+  
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  @apply antialiased text-slate-900 bg-[var(--color-cadom-bg)] font-sans;
+}
